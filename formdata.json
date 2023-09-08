@@ -1,0 +1,29 @@
+[
+    {
+        "type": "text",
+        "label": "First Name",
+        "name": "firstname",
+        "placeholder": "Enter your first name"
+    },
+    {
+        "type": "text",
+        "label": "Last Name",
+        "name": "lastname",
+        "placeholder": "Enter your last name"
+    },
+    {
+        "type": "select",
+        "label": "Gender",
+        "name": "gender",
+        "options": [
+            "Male",
+            "Female",
+            "Other"
+        ]
+    },
+    {
+        "type": "checkbox",
+        "label": "Subscribe to newsletter",
+        "name": "subscribe"
+    }
+]
