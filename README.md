@@ -15,12 +15,12 @@ Docker Compose
 ###Getting Started
 Clone the Repository:
 ```
-git clone [repository_url] webform-generator
-cd webform-generator
+git clone https://github.com/robert-washington/form-generator.git
 ```
 
 Build and Run the Docker Container:
 ```
+cd webform-generator
 docker-compose up --build
 ```
 
