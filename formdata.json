@@ -1,29 +1,58 @@
 [
     {
         "type": "text",
-        "label": "First Name",
-        "name": "firstname",
-        "placeholder": "Enter your first name"
+        "label": "Cluster Environment",
+        "name": "cluster_env",
+        "placeholder": "cluster build environment type"
     },
     {
         "type": "text",
-        "label": "Last Name",
-        "name": "lastname",
-        "placeholder": "Enter your last name"
+        "label": "Name",
+        "name": "name",
+        "placeholder": "cluster build environment type"
+    },
+    {
+        "type": "text",
+        "label": "Iteration",
+        "name": "iteration",
+        "placeholder": "Iteration or Year of the current title build"
     },
     {
         "type": "select",
-        "label": "Gender",
-        "name": "gender",
-        "options": [
-            "Male",
-            "Female",
-            "Other"
+        "label": "Build Type",
+        "name": "build_type",
+        "placeholder": "build type like db or app of the current build",
+        "options":[
+            "Database",
+            "Application"
+
         ]
     },
     {
-        "type": "checkbox",
-        "label": "Subscribe to newsletter",
-        "name": "subscribe"
+        "type": "select",
+        "label": "Datacenter",
+        "name": "datacenter",
+        "options":[
+            "IAD",
+            "LHR"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "APP BE VLAN",
+        "name": "app_be_vlan",
+        "options":[
+            "1",
+            "2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "APP FE VLAN",
+        "name": "app_fe_vlan",
+        "options":[
+            "1",
+            "2"
+        ]
     }
 ]
