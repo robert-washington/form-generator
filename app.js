@@ -40,13 +40,11 @@ function createFormElement(data) {
             element.type = 'checkbox';
             element.name = data.name;
             break;
-        // ... add other input types as needed
         default:
             console.error("Unsupported form element type:", data.type);
             break;
     }
 
-    // Check if the element is required
     if (data.required) {
         element.required = true;
     }
@@ -54,20 +52,26 @@ function createFormElement(data) {
     return element;
 }
 
+// Helper function to append field and label into a container div
+function appendFieldToForm(container, fieldData) {
+    const fieldContainer = document.createElement('div');
+    const label = document.createElement('label');
+    label.textContent = fieldData.label;
+    const element = createFormElement(fieldData);
+
+    fieldContainer.appendChild(label);
+    fieldContainer.appendChild(element);
+    container.appendChild(fieldContainer);
+}
 
 // Function to generate the form based on the fetched JSON data
 function generateForm(jsonData) {
     const formContainer = document.getElementById('formContainer');
     const form = document.createElement('form');
 
-    for (let field of jsonData) {
-        const label = document.createElement('label');
-        label.textContent = field.label + ': ';
-        const element = createFormElement(field);
-        form.appendChild(label);
-        form.appendChild(element);
-        form.appendChild(document.createElement('br'));  // Add a line break for layout purposes
-    }
+    jsonData.forEach(fieldData => {
+        appendFieldToForm(form, fieldData);
+    });
 
     const submitBtn = document.createElement('input');
     submitBtn.type = 'submit';
