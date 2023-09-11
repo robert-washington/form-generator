@@ -140,5 +140,135 @@
             "Test1",
             "Test2"
         ]
+    },
+    {
+        "type": "select",
+        "label": "Franchise",
+        "name": "franchise",
+        "required": false,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
+    },
+    {
+        "type": "text",
+        "label": "App Name Mod",
+        "name": "app_name_mod",
+        "required": false,
+        "placeholder": "It appends app to hostname"
+    },
+    {
+        "type": "select",
+        "label": "Cert Authority",
+        "name": "cert_authority",
+        "required": false,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Chef Version",
+        "name": "app_chef_version",
+        "required": false,
+        "options": [
+            "12",
+            "16"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Techops Base Version",
+        "name": "techops_base_version",
+        "required": false,
+        "options": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "VM CPUs",
+        "name": "app_vm_cpu",
+        "required": false,
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16",
+            "32"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "VM Memory",
+        "name": "app_vm_memory",
+        "required": false,
+        "options": [
+            "2GB",
+            "4GB",
+            "8GB",
+            "16GB",
+            "32GB"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "VM OS",
+        "name": "app_vm_os",
+        "required": false,
+        "options": [
+            "Ubuntu 22.04",
+            "Ubuntu 22.10",
+            "Windows"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "VM Disk1 Size",
+        "name": "app_vm_disk1_size",
+        "required": false,
+        "options": [
+            "100 GB",
+            "500 GB",
+            "1 TB"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Blaze Login Access",
+        "name": "gs_blaze_login_access",
+        "required": false,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Cookbook dynamic list",
+        "name": "cookbook_dynamic_list",
+        "required": false,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Dynamic Attributes",
+        "name": "dynamic_attributes",
+        "required": false,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
     }
 ]
