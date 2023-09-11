@@ -1,20 +1,50 @@
 [
     {
         "type": "text",
+        "label": "Title",
+        "name": "title",
+        "required": true,
+        "placeholder": "required build title"
+    },
+    {
+        "type": "text",
+        "label": "Name Prefix",
+        "name": "name_prefix",
+        "required": true,
+        "placeholder": "required build title"
+    },
+    {
+        "type": "select",
+        "label": "APP VM Count",
+        "name": "app_cnt",
+        "required": true,
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "type": "text",
         "label": "Cluster Environment",
         "name": "cluster_env",
-        "placeholder": "cluster build environment type"
+        "placeholder": "cluster build environment type",
+        "required": true
     },
     {
         "type": "text",
         "label": "Name",
         "name": "name",
+        "required": true,
         "placeholder": "cluster build environment type"
     },
     {
         "type": "text",
         "label": "Iteration",
         "name": "iteration",
+        "required": true,
         "placeholder": "Iteration or Year of the current title build"
     },
     {
@@ -22,17 +52,18 @@
         "label": "Build Type",
         "name": "build_type",
         "placeholder": "build type like db or app of the current build",
-        "options":[
+        "required": true,
+        "options": [
             "Database",
             "Application"
-
         ]
     },
     {
         "type": "select",
         "label": "Datacenter",
         "name": "datacenter",
-        "options":[
+        "required": true,
+        "options": [
             "IAD",
             "LHR"
         ]
@@ -41,7 +72,8 @@
         "type": "select",
         "label": "APP BE VLAN",
         "name": "app_be_vlan",
-        "options":[
+        "required": true,
+        "options": [
             "1",
             "2"
         ]
@@ -50,9 +82,63 @@
         "type": "select",
         "label": "APP FE VLAN",
         "name": "app_fe_vlan",
-        "options":[
+        "required": true,
+        "options": [
             "1",
             "2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Storage VLAN",
+        "name": "storage_vlan",
+        "required": true,
+        "options": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Chef Policy Group",
+        "name": "chef_policy_group",
+        "required": true,
+        "options": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Chef Server Type",
+        "name": "chef_server_type",
+        "required": true,
+        "options": [
+            "Lab",
+            "Staging",
+            "Production"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Default Blaze User List",
+        "name": "default_blaze_user_list",
+        "required": true,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
+        ]
+    },
+    {
+        "type": "select",
+        "label": "Cluster Index",
+        "name": "cluster_index",
+        "required": true,
+        "options": [
+            "Test",
+            "Test1",
+            "Test2"
         ]
     }
 ]

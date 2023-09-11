@@ -25,7 +25,6 @@ function createFormElement(data) {
             element.name = data.name;
             element.placeholder = data.placeholder;
             break;
-
         case 'select':
             element = document.createElement('select');
             element.name = data.name;
@@ -36,22 +35,25 @@ function createFormElement(data) {
                 element.appendChild(optionElement);
             }
             break;
-
         case 'checkbox':
             element = document.createElement('input');
             element.type = 'checkbox';
             element.name = data.name;
             break;
-
-        // ... you can add more types as needed
-
+        // ... add other input types as needed
         default:
             console.error("Unsupported form element type:", data.type);
             break;
     }
 
+    // Check if the element is required
+    if (data.required) {
+        element.required = true;
+    }
+
     return element;
 }
+
 
 // Function to generate the form based on the fetched JSON data
 function generateForm(jsonData) {
